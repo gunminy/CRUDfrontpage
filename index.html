@@ -58,6 +58,19 @@
     </header>
 </div>
 
+<script type="text/javascript">
+
+  function call_confirm(){
+    
+    if(confirm("제출하시겠습니까?")){
+      alert("정상적으로 제출되었습니다.");
+    }else{
+      alert("제출실패");
+    }
+    
+  }
+</script>
+
 <div class="container-fluid">
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -187,8 +200,8 @@
               <td>Yoga Mat</td>
               <td>50,000원</td>
               <td>50개</td>
-              <td><a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Product</a></td>
+              <td><a class="py-2 d-none d-md-inline-block" onclick="call_confirm()">Edit</a>
+                <a class="py-2 d-none d-md-inline-block" href="#">Delete</a></td>
             </tr>
           </tbody>
         </table>
@@ -202,3 +215,4 @@
 
     </body>
 </html>
+

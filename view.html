@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Dashboard Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+<body>
+    <script type="text/javascript">
+
+        function call_confirm(){
+          
+          if(confirm("게시물을 삭제할까요?")){
+            alert("정상적으로 삭제되었습니다.");
+          }else{
+            alert("취소");
+          }
+          
+        }
+      </script>
+      
+      <div class="container-fluid">
+      
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      
+            <h2>상품관리</h2>
+            <div class="table-responsive">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">품목</th>
+                    <th scope="col">품명</th>
+                    <th scope="col">가격</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">구매일</th>
+                    <th scope="col">상태</th>
+                    <th scope="col">MENU</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1,000</td>
+                    <td>노트북</td>
+                    <td>Dell XPS 13</td>
+                    <td>1,500,000원</td>
+                    <td>20개</td>
+                    <td>2023년 4월 15일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,001</td>
+                    <td>스마트폰</td>
+                    <td>iPhone 12 Pro</td>
+                    <td>1,200,000원</td>
+                    <td>30개</td>
+                    <td>2023년 5월 2일</td>
+                    <td>입고 대기</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,002</td>
+                    <td>스니커즈</td>
+                    <td>Nike Air Max 270</td>
+                    <td>150,000원</td>
+                    <td>50개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>품절</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,003</td>
+                    <td>커피머신</td>
+                    <td>Keurig K-Elite</td>
+                    <td>250,000원</td>
+                    <td>15개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,004</td>
+                    <td>서적</td>
+                    <td>The Great Gatsby" by F. Scott Fitzgerald</td>
+                    <td>25,000원</td>
+                    <td>40개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,005</td>
+                    <td>의자</td>
+                    <td>에르고노믹 오피스 체어</td>
+                    <td>300,000원</td>
+                    <td>25개</td>
+                    <td>2023년 5월 25일</td>
+                    <td>품절</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,006</td>
+                    <td>전자렌지</td>
+                    <td>Samsung Solo Microwave</td>
+                    <td>80,000원</td>
+                    <td>40개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>입고 대기</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,007</td>
+                    <td>헤드폰</td>
+                    <td>Sony WH-1000XM4</td>
+                    <td>350,000원</td>
+                    <td>15개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>품절</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,008</td>
+                    <td>운동화</td>
+                    <td>Nike Air Force 1</td>
+                    <td>120,000원</td>
+                    <td>60개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,009</td>
+                    <td>스피커</td>
+                    <td>Bose SoundLink Revolve+</td>
+                    <td>200,000원</td>
+                    <td>20개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,010</td>
+                    <td>책상</td>
+                    <td>IKEA Linnmon</td>
+                    <td>100,000원</td>
+                    <td>12개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,011</td>
+                    <td>냉장고</td>
+                    <td>Samsung French Door</td>
+                    <td>2,000,000원</td>
+                    <td>5개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,012</td>
+                    <td>액세서리</td>
+                    <td>Apple AirPods Pro</td>
+                    <td>250,000원</td>
+                    <td>18개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,013</td>
+                    <td>카메라</td>
+                    <td>Sony Alpha A7III</td>
+                    <td>1,800,000원</td>
+                    <td>8개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,014</td>
+                    <td>키보드</td>
+                    <td>Logitech G Pro X</td>
+                    <td>150,000원</td>
+                    <td>20개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>1,015</td>
+                    <td>헬스용품</td>
+                    <td>Yoga Mat</td>
+                    <td>50,000원</td>
+                    <td>50개</td>
+                    <td>2023년 3월 10일</td>
+                    <td>판매 중</td>
+                    <td><a class="py-2 d-none d-md-inline-block" href="edit.html" >Edit</a>
+                      <a class="py-2 d-none d-md-inline-block" href="" onclick="call_confirm()" >Delete</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+        </div>
+      </div>
+      
+      
+          <script src="bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      
+          </body>
+      </html>
+      
+      

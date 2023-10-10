@@ -46,9 +46,9 @@ body {
 
   /* Pagination */
 .blog-pagination {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .blog-pagination > .btn {
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
   

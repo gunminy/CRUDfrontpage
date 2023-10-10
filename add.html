@@ -145,11 +145,12 @@
                 if (!form.checkValidity()) {
                     event.preventDefault()
                     event.stopPropagation()
+                }else{
+                    alert('폼이 성공적으로 제출되었습니다!')
                 }
             form.classList.add('was-validated')
             }, false)
         })
-        alert("정상적으로 삭제되었습니다.");
 
     })
 

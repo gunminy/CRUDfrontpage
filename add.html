@@ -119,41 +119,36 @@
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">추가하기</button>
+          <button class="w-100 btn btn-primary btn-lg" onclick="call_confirm()">추가하기</button>
         </form>
       </div>
     </div>
   </main>
 
 </div>
-
-
       <script type="text/javascript">
         // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
+        function call_confirm(){
         'use strict'
-
+        let v = 1;
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.querySelectorAll('.needs-validation')
 
         // Loop over them and prevent submission
-        let v = 1;
+        
         Array.prototype.slice.call(forms).
         forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                    v=0;
-                }
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                v=0;
+            }
             form.classList.add('was-validated')
-            }, false)
         })
         if(v==1){
             alert("게시물이 추가됩니다.")
         }
-
-    })
+    }
 
       </script>
   </body>

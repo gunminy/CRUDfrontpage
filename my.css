@@ -72,7 +72,7 @@ body {
     font-size: 1.125rem;
     text-anchor: middle;
   }
-  d-flex {
+  .d-flex {
     flex-direction: column;
     align-items: center; 
   }
